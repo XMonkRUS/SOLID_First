@@ -101,23 +101,3 @@ public:
 
 	}
 };
-
-
-int main() {
-
-	Client* client = new Client{ "Tom",2000 };
-	Client* client1 = new Client{ "Kate",100 };
-
-	Bank* sber = new Bank;
-	sber->addClient(client);
-
-	sber->ShowClientInfo(client);
-	sber->TakeClientMoney(client, 200);
-	sber->ShowClientInfo(client);
-	client->Deposit(1000);
-	sber->ShowClientInfo(client);
-
-	sber->ShowClientInfo(client1);
-
-
-}
